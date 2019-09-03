@@ -1,0 +1,30 @@
+body {
+  
+}
+
+code {
+  
+}
+
+.b{
+  border: 1px solid red;
+}
+
+
+.content{
+  margin: 15px auto;
+}
+
+.center-component{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.left-component{
+  margin: 0 auto;
+  text-align: left;
+}
+.btn-margin{
+  margin: 10px;
+}
+

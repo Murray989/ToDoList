@@ -1,0 +1,74 @@
+import React, { Component } from 'react';
+import Devices from './components/devices';
+
+class Home extends Component {
+
+    state = {
+        listDevices: []
+    }
+
+    /*
+    constructor(props){
+        super(props);
+    }*/
+
+    componentDidMount(){
+        console.log('El componente fue montado');
+        let deviceList = [
+            {
+                id: 1,
+                name: 'UTF-984'
+            },
+            {
+                id: 2,
+                name: 'CYT-924'
+            },
+            {
+                id: 3,
+                name: 'UJI-089'
+            },
+            {
+                id: 4,
+                name: 'LHJ-471'
+            },
+            {
+                id: 5,
+                name: 'JRW-110'
+            }
+        ];
+        //this.listDevices = deviceList
+        this.setState({ listDevices: deviceList }); 
+    }
+
+    clickHandler(){
+        console.log('agregaré un nuevo item de dices');
+        let newDevice = {
+            id: 6,
+            name: 'RJP-999'
+        };
+        let newListDevices = [...this.state.listDevices, newDevice];
+        this.setState({ listDevices: newListDevices });
+    }
+
+    render() {
+        return (
+            <div>
+                <div className="row">
+                    <div className="col-md-2">
+                        
+                    </div>
+                    <div className="col-md-8 ">
+                    { /* <button onClick={ this.clickHandler.bind(this) } type="button" 
+                        className="btn btn-success">Evento botón</button> */}
+                     <Devices eventAddDev={ this.clickHandler.bind(this) } list={ this.state.listDevices } />  
+                    </div>
+                    <div className="col-md-2 ">
+
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Home;
