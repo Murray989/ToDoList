@@ -6,13 +6,19 @@ code {
   
 }
 
+
 .b{
-  border: 1px solid red;
+  background-color:red ;
 }
 
+.btn-s{
+  border-radius: 10px;
+  margin: auto 5px auto 5px;
+  align-items: right;
+}
 
 .content{
-  margin: 15px auto;
+  margin: 15px auto 0 auto;
 }
 
 .center-component{
@@ -22,9 +28,25 @@ code {
 
 .left-component{
   margin: 0 auto;
-  text-align: left;
-}
-.btn-margin{
-  margin: 10px;
+  text-align: 0 auto 0 auto;
 }
 
+.right-component{
+  margin: 0 auto ;
+  align-items: right;
+  background-color: aqua
+
+}
+
+.btn-margin{
+  margin: 5px;
+  border: hidden;
+  border-radius: 5px;
+  align: right;
+}
+
+.title{
+font-family: 'Verdana  black' ;
+color: rgb(17, 7, 15);
+font-size: 1.8em;
+}

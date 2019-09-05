@@ -17,23 +17,28 @@ class Home extends Component {
         let deviceList = [
             {
                 id: 1,
-                name: 'UTF-984'
+                name: 'Primera actividad',
+                detail:'                '
             },
             {
                 id: 2,
-                name: 'CYT-924'
+                name: 'Segunda  actividad',
+                detail:'                '
             },
             {
                 id: 3,
-                name: 'UJI-089'
+                name: 'tercera actividad',
+                detail:'                '
             },
             {
                 id: 4,
-                name: 'LHJ-471'
+                name: 'Cuarta actividad',
+                detail:'                '
             },
             {
                 id: 5,
-                name: 'JRW-110'
+                name: 'Ejercicio uno',
+                detail:'                '
             }
         ];
         //this.listDevices = deviceList
@@ -44,11 +49,13 @@ class Home extends Component {
         console.log('agregaré un nuevo item de dices');
         let newDevice = {
             id: 6,
-            name: 'RJP-999'
+            name: 'Ultima Actividad-999',
+            detail:'                '
         };
         let newListDevices = [...this.state.listDevices, newDevice];
         this.setState({ listDevices: newListDevices });
     }
+    
 
     render() {
         return (
@@ -61,6 +68,7 @@ class Home extends Component {
                     { /* <button onClick={ this.clickHandler.bind(this) } type="button" 
                         className="btn btn-success">Evento botón</button> */}
                      <Devices eventAddDev={ this.clickHandler.bind(this) } list={ this.state.listDevices } />  
+                     
                     </div>
                     <div className="col-md-2 ">
 
