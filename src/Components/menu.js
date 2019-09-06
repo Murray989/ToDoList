@@ -17,7 +17,7 @@ class Menu extends Component {
                         </a>
                     </div>
                     <div className="col-md-5 container-1">
-                        <span src="/lupa.png" alt="buscar" height="20" width="20"></span>
+                        <span src="/lupa.png" alt="buscar" height="25" width="25"></span>
                         <input   className="form-control mr-sm-2 btn-margin" type="search" placeholder="Search..." aria-label="Search..."></input> 
                      { /*   <span  className="icon"><i className="fa fa-search"></i></span>
                         <input type="search" id="search" placeholder="search..." /> */}
