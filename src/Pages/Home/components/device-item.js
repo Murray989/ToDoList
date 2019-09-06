@@ -7,10 +7,10 @@ const DeviceItem = (props) => {
         <li key={ props.key } className="list-group-item">{ props.name } 
         
         <p align="right">
-        <button  className="btn btn-info btn-s">
+        <button  className="btn btn-info btn-s" > {/* onClick={this.deleteRow.bind(this, id)}*/}
         <img src="/edit.png" alt="Editar" height="20" width="20"/>
         </button>
-        <button className="btn btn-danger btn-s">
+        <button className="btn btn-danger btn-s" > {/*onClick={this.editRow.bind(this, id)}>*/} 
         <img src="/delete.png" alt="Borrar" height="20" width="20"/>
         </button>
         </p>

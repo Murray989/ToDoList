@@ -7,7 +7,7 @@ const Devices = (props) => {
         <div className="devices-container">
             <h4 className="text-center">Lista de Actidades</h4>
             <div className="left-component">
-                <button onClick={ props.eventAddDev } type="button" className="btn btn-primary btn-margin btn-s">Add</button>
+                <button onClick={ props.eventAddDev } type="button" className="btn btn-primary btn-s">Add</button>
                 
             </div>
             <ul className="list-group">
@@ -19,7 +19,12 @@ const Devices = (props) => {
                     })
                 }
             </ul>
-
+            <ul >
+                
+                
+            </ul>
+            <ul >
+            </ul>
         </div>
     );
 };

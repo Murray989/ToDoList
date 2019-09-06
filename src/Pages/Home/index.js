@@ -55,7 +55,7 @@ class Home extends Component {
         let newListDevices = [...this.state.listDevices, newDevice];
         this.setState({ listDevices: newListDevices });
     }
-    
+
 
     render() {
         return (
@@ -68,7 +68,8 @@ class Home extends Component {
                     { /* <button onClick={ this.clickHandler.bind(this) } type="button" 
                         className="btn btn-success">Evento botón</button> */}
                      <Devices eventAddDev={ this.clickHandler.bind(this) } list={ this.state.listDevices } />  
-                     
+                     <Devices eventAddDev={ this.clickHandler.bind(this) } list={ this.state.listDevices } />  
+                
                     </div>
                     <div className="col-md-2 ">
 
